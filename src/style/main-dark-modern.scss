@@ -1,0 +1,45 @@
+
+.swagger-ui {
+  @import '~tachyons-sass/tachyons.scss';
+  @import 'themes/dark-modern-variables';
+  @import 'mixins';
+  @import 'type';
+  @import 'layout';
+  @import 'buttons';
+  @import 'form';
+  @import 'modal';
+  @import 'models';
+  @import 'servers';
+  @import 'table';
+  @import 'topbar';
+  @import 'information';
+  @import 'authorize';
+  @import 'errors';
+  @include text_body();
+  @import 'split-pane-mode';
+  @import 'markdown';
+  @import '../core/plugins/json-schema-2020-12/components/all';
+  @import '../core/plugins/oas31/components/all';
+  // * {
+  //   color: $white;
+  //   background-color: $gray-900;
+  // }
+
+  background-color: $gray-900;
+
+  button {
+    svg {
+      fill: $white;
+    }
+  }
+
+  *{
+    color: $white;
+  }
+
+  .swagger-ui .dialog-ux .backdrop-ux {
+    background-color: rgba($black, 0.75);
+  }
+}
+
+

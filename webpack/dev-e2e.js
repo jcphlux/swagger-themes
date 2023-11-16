@@ -22,7 +22,8 @@ const devE2eConfig = configBuilder(
       "swagger-ui-standalone-preset": [
         "./src/standalone/presets/standalone/index.js",
       ],
-      "swagger-ui": "./src/style/main.scss",
+      // "swagger-ui": "./src/style/main.scss",
+      "swagger-ui-dark-modern": "./src/style/main-dark-modern.scss",
     },
 
     performance: {
