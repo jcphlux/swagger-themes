@@ -229,7 +229,9 @@ textarea
 
         &:checked + label > .item
         {
-            background: $form-checkbox-background-color url('data:image/svg+xml, <svg width="10px" height="8px" viewBox="3 7 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon id="Rectangle-34" stroke="none" fill="#41474E" fill-rule="evenodd" points="6.33333333 15 3 11.6666667 4.33333333 10.3333333 6.33333333 12.3333333 11.6666667 7 13 8.33333333"></polygon></svg>') center center no-repeat;
+            $svg-content: '<svg width="10px" height="8px" viewBox="3 7 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon id="Rectangle-34" stroke="none" fill="#{$form-checkbox-label-font-color}" fill-rule="evenodd" points="6.33333333 15 3 11.6666667 4.33333333 10.3333333 6.33333333 12.3333333 11.6666667 7 13 8.33333333"></polygon></svg>';
+            $svg-background: url('data:image/svg+xml, #{$svg-content}') center center no-repeat;
+            background:$form-checkbox-background-color $svg-background;
         }
     }
 }

@@ -161,6 +161,10 @@
 button
 {
   cursor: pointer;
+  background-color: $btn-background-color;
+  svg {
+      fill: $expand-methods-svg-fill-color;
+    }
 
   &.invalid
   {

@@ -1,8 +1,24 @@
+@import '~tachyons-sass/tachyons.scss';
+@import 'variables';
+
+html {
+  box-sizing: border-box;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  background: invert-for-dark-theme($gray-50);
+  color: $text-body-default-font-color;
+  *{
+    color: $text-body-default-font-color;
+  }
+}
+
 .swagger-ui
 {
-    @import '~tachyons-sass/tachyons.scss';
     @import 'mixins';
-    @import '_variables';
     @import 'type';
     @import 'layout';
     @import 'buttons';
